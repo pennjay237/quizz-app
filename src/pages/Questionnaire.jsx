@@ -13,7 +13,7 @@ export default function Questionnaire() {
   const navigate = useNavigate();
 
   const handleNext = (question, response) => {
-    setTime(15)
+    setTime(10)
     const newQuestion = { ...question, yours: response };
     setTabReponse([...tabReponse, newQuestion]);
     if (number === 10) {
