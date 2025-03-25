@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+import he from "he";
 
 export default function Question({
 	next,
@@ -7,6 +8,9 @@ export default function Question({
 	totalQuestion,
 	time,
 }) {
+	function escapeHtml(word){
+		return word ? he.decode(word) : "";
+	}
 	return (
 		<div className="box">
 			<div className="card-box question-box">
@@ -27,12 +31,12 @@ export default function Question({
 					</div>
 					<div className="col-6">
 						<h4>
-							Difficulty : <span> {question?.difficulty} </span>
+							Difficulty : <span>{question.difficulty}</span>
 						</h4>
 					</div>
 				</div>
 				<div className="row g-1">
-					<h3 className="questipn">{question?.question}</h3>
+					<h3 className="questipn"> {escapeHtml(question?.question)}</h3>
 				</div>
 				<div className="tfbut">
 					<div className="col-6">

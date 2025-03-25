@@ -15,7 +15,6 @@ body {
 	align-items: center;
 	height: 100vh;
 	flex-direction: column;
-	text-align: center;
 	padding: 1rem;
 }
 
@@ -106,10 +105,12 @@ body {
 		width: 120px;
 		height: 45px;
 		font-size: 16px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.rules {
-		font-size: 16px;
+		font-size: 2.5rem;
 		padding: 5px;
 	}
 
@@ -132,11 +133,13 @@ body {
 	.rules {
 		font-size: 14px;
 	}
-
-	.bouton, .rsb {
-		width: 100px;
-		height: 40px;
-		font-size: 14px;
-	}
 }
 
+	.rds{
+		justify-content: center;
+		display: flex;
+	}
+.ges{
+	text-align: center;
+	padding-bottom:20px;
+}

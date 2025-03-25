@@ -7,7 +7,7 @@ import {useParams} from 'react-router';
 export default function Questionnaire() {
   const {number: num} =useParams()
   const number = parseInt(num, 10)
-  const [time,setTime]=useState(15)
+  const [time,setTime]=useState(10)
   const { tabQuestions, setTabReponse, tabReponse } =
     useContext(DataContext);
   const navigate = useNavigate();

@@ -10,6 +10,7 @@ export default function WelcomCart({ navig, isLoading }) {
         <div className="row">
           <p className="rules">
             <ul>
+              <div className="ges"><h2>Game Instructions !🚨Please Read🚨!</h2></div>
               <li>You will be provided with ten (10) question answering one (1) at a time.</li>
               <li>Answer either True or False depending on your decision.</li>
               <li>Try to score from five and above for a pass mark, else you fail the quizz</li>
